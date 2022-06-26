@@ -1,3 +1,5 @@
+//fonte da imagem: https://www.flaticon.com/free-icon/scrum_5266427
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  title = 'scrum-utility-manager';
-  
+  title = 'Scrum Utility Manager';
+  itemImageUrl = "./assets/icone.png";  
+
   constructor() { }
 
   ngOnInit(): void {
