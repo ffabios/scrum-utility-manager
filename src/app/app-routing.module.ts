@@ -5,7 +5,7 @@ import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes = [
   { path: 'autoria', component: AutoriaComponent },
-  { path: 'sobre', component: SobreComponent },
+  { path: 'sobre/:data', component: SobreComponent },
 ];
 
 @NgModule({

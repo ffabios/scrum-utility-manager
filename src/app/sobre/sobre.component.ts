@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'sum-sobre',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SobreComponent implements OnInit {
 
-  constructor() { }
+  data: string ='';
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    const d = this.route.snapshot.paramMap.get('data');
+    this.data = d !== null ? d : '';
   }
 
 }

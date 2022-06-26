@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
+  dataAtual = new Date();
+
   constructor() { }
 
   ngOnInit(): void {
