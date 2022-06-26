@@ -1,26 +1,26 @@
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened>
-      <mat-toolbar>  
-        <mat-toolbar-row >
-          Estórias de Usuário
-        </mat-toolbar-row>
-    
-        <mat-toolbar-row >
-            Sobre o Aplicativo
-        </mat-toolbar-row>
-    
-        <mat-toolbar-row>
-          Autoria
-        </mat-toolbar-row>
-    
-        <mat-toolbar-row>
-          Ajuda
-        </mat-toolbar-row>     
-      </mat-toolbar>
+    <mat-nav-list>
+      <mat-list-item>
+        <h4 matLine routerLink="/" routerLinkActive="active-link">Estórias de Usuário</h4>
+      </mat-list-item>
+
+      <mat-list-item>
+        <h4 matLine routerLink="/sobre" routerLinkActive="active-link">Sobre o Aplicativo</h4>
+      </mat-list-item>
+
+      <mat-list-item>
+        <h4 matLine routerLink="/autoria" routerLinkActive="active-link">Autoria</h4>
+      </mat-list-item>
+
+      <mat-list-item>
+        <h4 matLine routerLink="/" routerLinkActive="active-link">Ajuda</h4>
+      </mat-list-item>
+    </mat-nav-list>    
   </mat-sidenav>
 
   <mat-sidenav-content>       
-
+    <ng-content title = "autoria"></ng-content>
   </mat-sidenav-content>
 
 </mat-sidenav-container>

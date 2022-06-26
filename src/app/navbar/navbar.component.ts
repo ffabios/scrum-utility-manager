@@ -1,6 +1,6 @@
 //fonte da imagem: https://www.flaticon.com/free-icon/scrum_5266427
 
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sum-navbar',
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  title = 'Scrum Utility Manager';
+  @Input() title: string = '';
   itemImageUrl = "./assets/icone.png";  
 
   constructor() { }
