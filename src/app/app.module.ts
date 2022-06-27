@@ -12,6 +12,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatListModule } from '@angular/material/list';
+import { EstoriaComponent } from './estoria/estoria.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { MatListModule } from '@angular/material/list';
     SobreComponent,
     NavbarComponent,
     FooterComponent,
-    SidenavComponent,    
+    SidenavComponent,
+    EstoriaComponent,    
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
