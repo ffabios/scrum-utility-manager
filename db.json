@@ -1,19 +1,18 @@
 {
-  "posts": [
+  "estorias": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "nome": "Login de Usuário",
+      "descricao": "Como usuário, quero fazer login na aplicação.",
+      "prioridade": "alta",
+      "status": "a fazer",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nome": "Listagem de Produtos",
+      "descricao": "Como usuário, quero ser apto a listar os produtos disponíveis, de forma a poder fazer uma compra.",
+      "prioridade": "alta",
+      "status": "em andamento",
+      "id": 2
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -14,6 +14,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatListModule } from '@angular/material/list';
 import { EstoriaComponent } from './estoria/estoria.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { FormsModule } from '@angular/forms';
     MatSidenavModule,
     MatListModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
