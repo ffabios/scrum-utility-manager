@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href https://ffabios.github.io/scrum-utility-manager/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "ghpages": "angular-cli-ghpages --dir=dist/scrum-utility-manager -- repo=https://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@github.com/ffabios/scrum-utility-manager.git --name=ffabios --email=ffabios@gmail.com",
+    "deploy": "npm run build & npm run ghpages"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +22,7 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "angular-cli-ghpages": "^1.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
