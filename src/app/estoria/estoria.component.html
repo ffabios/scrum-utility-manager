@@ -1,12 +1,12 @@
+<div class="formulario">
 <h2>Cadastro de Estória de usuário</h2> 
 <form #estoriaForm="ngForm" (ngSubmit)="enviarFormulario(estoriaForm)">
-   <table>
-     <tr> 
-       <td>Estoria:</td>
-       <td> 
-           <input name="nome" [ngModel]="estoria.nome" required [pattern]="nomePattern" #nome="ngModel">            
-       </td>
-       <td>
+    
+    <div class="label-float">        
+        <input name="nome" [ngModel]="estoria.nome" required [pattern]="nomePattern" #nome="ngModel" placeholder=" "/>           
+        <label for="nome">Estória</label>
+    </div>
+    <div>  
         <div *ngIf="nome.errors && nome.touched && !formularioValido" [ngClass] = "'error'"> 
             <div *ngIf="nome.errors?.['required']" class = "alerta"> 
                 Estoria requerida.
@@ -15,64 +15,58 @@
                 Estoria inválida.
             </div>	
         </div>
-       </td>
-     </tr> 
-
-     <tr> 
-        <td>Descrição:</td>
-        <td> 
-            <input name="descricao" [ngModel]="estoria.descricao" required [pattern]="descricaoPattern" #descricao="ngModel">            
-        </td>
-        <td>
-         <div *ngIf="descricao.errors && descricao.touched && !formularioValido" [ngClass] = "'error'"> 
-             <div *ngIf="descricao.errors?.['required']" class = "alerta"> 
+    </div>
+     
+      
+    <div class="label-float">        
+        <input name="descricao" [ngModel]="estoria.descricao" required [pattern]="descricaoPattern" #descricao="ngModel" placeholder=" ">            
+        <label for="nome">Descrição</label>
+    </div>
+    <div>     
+        <div *ngIf="descricao.errors && descricao.touched && !formularioValido" [ngClass] = "'error'"> 
+            <div *ngIf="descricao.errors?.['required']" class = "alerta"> 
                 Descricao da Estoria requerida.
-             </div>						
-             <div *ngIf="descricao.errors?.['pattern']" class = "alerta"> 
+            </div>						
+            <div *ngIf="descricao.errors?.['pattern']" class = "alerta"> 
                 Descricao da Estoria inválida.
-             </div>	
-         </div>
-        </td>
-      </tr> 
+            </div>	
+        </div>     
+    </div> 
 
-      <tr> 
-        <td>Prioridade:</td>
-        <td> 
-            <input name="prioridade" [ngModel]="estoria.prioridade" required [pattern]="prioridadePattern" #prioridade="ngModel">            
-        </td>
-        <td>
-         <div *ngIf="prioridade.errors && prioridade.touched && !formularioValido" [ngClass] = "'error'"> 
-             <div *ngIf="prioridade.errors?.['required']" class = "alerta"> 
+    <div class="label-float">               
+        <input name="prioridade" [ngModel]="estoria.prioridade" required [pattern]="prioridadePattern" #prioridade="ngModel" placeholder=" ">            
+        <label for="nome">Prioridade</label>
+    </div>
+    <div>      
+        <div *ngIf="prioridade.errors && prioridade.touched && !formularioValido" [ngClass] = "'error'"> 
+            <div *ngIf="prioridade.errors?.['required']" class = "alerta"> 
                 Prioridade requerida.
-             </div>						
-             <div *ngIf="prioridade.errors?.['pattern']" class = "alerta"> 
+            </div>						
+            <div *ngIf="prioridade.errors?.['pattern']" class = "alerta"> 
                 Prioridade inválida.
-             </div>	
-         </div>
-        </td>
-      </tr> 
+            </div>	
+        </div>        
+    </div> 
 
-      <tr> 
-        <td>Status:</td>
-        <td> 
-            <input name="status" [ngModel]="estoria.status" required [pattern]="statusPattern" #status="ngModel">            
-        </td>
-        <td>
-         <div *ngIf="status.errors && status.touched && !formularioValido" [ngClass] = "'error'"> 
-             <div *ngIf="status.errors?.['required']" class = "alerta"> 
+    <div class="label-float">        
+        <input name="status" [ngModel]="estoria.status" required [pattern]="statusPattern" #status="ngModel" placeholder=" ">
+        <label for="nome">Status</label> 
+    </div>
+    <div>   
+        <div *ngIf="status.errors && status.touched && !formularioValido" [ngClass] = "'error'"> 
+            <div *ngIf="status.errors?.['required']" class = "alerta"> 
                  Status requerido.
-             </div>						
-             <div *ngIf="status.errors?.['pattern']" class = "alerta"> 
+            </div>						
+            <div *ngIf="status.errors?.['pattern']" class = "alerta"> 
                 Status inválido.
-             </div>	
-         </div>
-        </td>
-      </tr> 
+            </div>	
+        </div>
+    </div>        
   	 
-     <tr> 	  
-       <td colspan="2">
-           <button type="submit" [disabled]="!estoriaForm.valid">Enviar</button>
-       </td>
-     </tr>	   
-    </table>  
+    <div> 	
+       <button mat-raised-button [disabled]="!estoriaForm.valid">Enviar</button>        
+    </div>	   
+    
    </form> 
+
+</div>

@@ -41,5 +41,5 @@ export class EstoriaComponent implements OnInit {
     this.estoria = new Estoria();  
     form.resetForm();   
   }
-
+  
 }

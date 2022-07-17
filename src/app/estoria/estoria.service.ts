@@ -1,6 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Estoria } from './estoria';
+import { Observable, of } from 'rxjs';
+import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable({ providedIn: 'root' })
 
@@ -21,5 +23,15 @@ export class EstoriaService {
         this.httpOptions
         )
         .toPromise();
+    }
+
+    getEstorias(): Observable<Estoria[]> {
+      return this.httpClient.get<Estoria[]>(this.URL);       
+    }
+
+    excluirEstoria(id: number): Observable<Estoria> {
+      const url = `${this.URL}/${id}`;
+  
+      return this.httpClient.delete<Estoria>(url, this.httpOptions);
     }
 }

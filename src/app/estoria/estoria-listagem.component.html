@@ -1,0 +1,39 @@
+<div style="padding: 20px;">
+    <h3>Listagem das Estorias de Usuário</h3>
+
+    <div *ngIf="estorias?.length">        
+        <table>
+
+            <thead>  
+                <th>nome</th>
+                <th>descricao</th>
+                <th>prioridade</th>
+                <th>status</th>          
+                <th>excluir</th> 
+            </thead>
+        
+            <tbody>
+            <tr *ngFor="let estoria of estorias">
+                <td>{{estoria.nome}}</td>
+                <td>{{estoria.descricao}}</td>
+                <td>{{estoria.prioridade | uppercase}}</td>
+                <td>{{estoria.status | uppercase}}</td> 
+                <td>
+                 <button mat-icon-button matTooltip="Excluir Estória"
+                        (click)="excluir(estoria.id)" color="warn">
+                        <mat-icon>delete</mat-icon>
+                      </button> 
+                </td>     
+            </tr>
+            </tbody>
+        
+        </table>
+    </div>
+  
+    <div *ngIf="!estorias?.length">
+        <h5>Nenhuma Estória de Usuário Cadastrada</h5>
+    </div>
+    
+  </div>
+
+  

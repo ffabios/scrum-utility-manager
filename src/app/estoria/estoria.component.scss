@@ -1,3 +1,84 @@
+//Referencia: https://velhobit.com.br/design/como-fazer-efeito-float-label-animado-com-css3-puro.html
+
 .alerta {
     color: red;
+    font-size:smaller;
 }
+
+input {
+    width: 100%;   
+    padding: 20px 0px 5px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.mat-button-base {
+    margin: 8px 8px 8px 0;
+}
+
+.formulario {
+    border-radius: 5px;   
+    padding: 20px;
+  }
+
+  .label-float{
+    position: relative;
+    padding-top: 13px;
+  }
+  
+  .label-float input{
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance:none;
+    border-radius:0;
+    margin-bottom: 0px;  
+  }
+  
+  .label-float input:focus{
+    border-bottom: 2px solid #3951b2;
+  }
+  
+  .label-float input::placeholder{
+    color:transparent;
+  }
+  
+  .label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin-top: 35px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    color: #eee;
+  }
+  
+  .label-float input:required:invalid + label{
+    color: grey;//red;
+  }
+  .label-float input:focus:required:invalid {
+    border-bottom: 2px solid red;
+  }
+  .label-float input:focus:required:invalid + label{    
+    color: red !important;
+  }
+  .label-float input:required:invalid + label:before{
+    content: '*';
+  }
+  .label-float input:focus + label,
+  .label-float input:not(:placeholder-shown) + label{
+    font-size: .75em;
+    margin-top: 20px;
+    color: #3951b2;
+  }

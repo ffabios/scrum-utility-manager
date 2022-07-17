@@ -1,18 +1,25 @@
 {
   "estorias": [
     {
-      "nome": "Login de Usuário",
-      "descricao": "Como usuário, quero fazer login na aplicação.",
+      "nome": "Logoff de Usuário",
+      "descricao": "Como usuário, quero fazer logoff na aplicação.",
       "prioridade": "alta",
       "status": "a fazer",
       "id": 1
     },
     {
-      "nome": "Listagem de Produtos",
-      "descricao": "Como usuário, quero ser apto a listar os produtos disponíveis, de forma a poder fazer uma compra.",
+      "nome": "Login de Usuário",
+      "descricao": "Como usuário, quero fazer login na aplicação.",
       "prioridade": "alta",
-      "status": "em andamento",
+      "status": "a fazer",
       "id": 2
+    },
+    {
+      "nome": "Listagem de Produtos",
+      "descricao": "Como usuário, quero ser apto a ver uma listagem dos produtos disponíveis para compra.",
+      "prioridade": "média",
+      "status": "fazendo",
+      "id": 3
     }
   ]
 }

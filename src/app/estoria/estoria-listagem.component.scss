@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: #fff;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    border-spacing: 0;
+    vertical-align: middle;
+}
+tr {
+    height: 48px;
+    padding-left: 24px;
+}
+
+  td {
+    padding-left: 24px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0,.12);  
+  }
+
+th {
+    height: 56px;
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0,.12);
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0,0,0,.54);
+    text-align: left;
+}
+
+th, td:first-of-type {
+    padding-left: 24px;
+}

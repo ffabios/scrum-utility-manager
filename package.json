@@ -7,8 +7,7 @@
     "build": "ng build --base-href https://ffabios.github.io/scrum-utility-manager/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "json:server": "json-server --watch db.json",
-    "json:server:routes": "json-server --watch db.json --routes routes.json",
+    "json:server": "json-server --watch db.json",    
     "ghpages": "angular-cli-ghpages --dir=dist/scrum-utility-manager -- repo=https://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@github.com/ffabios/scrum-utility-manager.git --name=ffabios --email=ffabios@gmail.com",
     "deploy": "npm run build & npm run ghpages"
   },
