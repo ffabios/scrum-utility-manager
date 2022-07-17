@@ -3,7 +3,7 @@ Esta Aplicação auxiliará o usuário no gerenciamento de projetos utilizando d
 
 # Protótipo
 
-https://www.figma.com/
+https://www.figma.com/file/Zig8Udk0huC2VGp0EtUo2q/Scrum-Utility-Manager
 
 # Checklist
 
@@ -24,4 +24,4 @@ https://www.figma.com/
 - [X] Apresentar uma lista de dados com a diretiva estrutural ngFor.
 - [X] Usar a diretiva ngIf
 - [X] Formatar a apresentação de dados com Pipes.
-- [ ] Build e deploy da aplicação.
+- [X] Build e deploy da aplicação.
