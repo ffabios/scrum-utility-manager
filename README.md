@@ -5,6 +5,10 @@ Esta Aplicação auxiliará o usuário no gerenciamento de projetos utilizando d
 
 https://www.figma.com/file/Zig8Udk0huC2VGp0EtUo2q/Scrum-Utility-Manager
 
+# Demo
+
+https://ffabios.github.io/scrum-utility-manager/
+
 # Checklist
 
 - [X] Criar o repositório no GitHub com a estrutura do Gitflow, ou seja, branches main e develop.
